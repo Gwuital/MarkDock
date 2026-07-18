@@ -18,10 +18,8 @@ mir als Product Owner und Tester:
 
 Der Ablauf: Claude entwirft eine präzise Aufgabenbeschreibung, Qwen3-Coder
 setzt sie um, Claude prüft das Ergebnis auf Bugs und Regressionen, ich
-teste jede Änderung live in der laufenden App. Alle Entwicklungsschritte
-sind nachvollziehbar in [`tasks/`](tasks/) dokumentiert — inklusive
-gefundener Bugs und Korrekturrunden. Kein Vibe-Coding auf Vertrauen: jede
-Zeile wurde geprüft, bevor sie committet wurde.
+teste jede Änderung live in der laufenden App. Kein Vibe-Coding auf
+Vertrauen: jede Zeile wurde geprüft, bevor sie committet wurde.
 
 ## Was MarkDock kann
 
@@ -105,7 +103,6 @@ vollständige Beschreibung aller Funktionen.
 MarkDock/
 ├── docs/               ← Dokumentation (Anforderungen, Architektur)
 ├── src/MarkDock/        ← Quellcode (WPF-Anwendung)
-├── tasks/               ← Entwicklungs-Task-Protokolle (Claude/Qwen-Workflow)
 ├── LICENSE               ← MIT-Lizenz
 └── README.md             ← diese Datei
 ```
@@ -137,10 +134,8 @@ with me acting as product owner and tester:
 
 The workflow: Claude drafts a precise task specification, Qwen3-Coder
 implements it, Claude reviews the result for bugs and regressions, I test
-every change live in the running app. The full development history is
-documented in [`tasks/`](tasks/) — including bugs found and correction
-rounds. No blind vibe-coding: every line was reviewed before being
-committed.
+every change live in the running app. No blind vibe-coding: every line
+was reviewed before being committed.
 
 ## What MarkDock can do
 
@@ -224,7 +219,6 @@ description of all features.
 MarkDock/
 ├── docs/               ← Documentation (requirements, architecture)
 ├── src/MarkDock/        ← Source code (WPF application)
-├── tasks/               ← Development task logs (Claude/Qwen workflow)
 ├── LICENSE               ← MIT license
 └── README.md             ← this file
 ```
