@@ -6,6 +6,23 @@ Ein lokales, datenschutzfreundliches Bookmark-Verwaltungstool für Windows.
 Kein Cloud-Zwang, keine Konten, keine Werbung — deine Bookmarks bleiben auf
 deinem Rechner.
 
+## Wie dieses Projekt entstanden ist
+
+MarkDock ist komplett im Zusammenspiel zweier KI-Modelle entstanden, mit
+mir als Product Owner und Tester:
+
+- **[Claude](https://claude.ai) (Anthropic)** — Architektur, Code-Review,
+  Aufgaben-Planung, Fehleranalyse
+- **Qwen3-Coder 30B** — lokal laufendes Modell (RTX 4090), übernimmt die
+  eigentliche Code-Umsetzung nach Vorgabe von Claude
+
+Der Ablauf: Claude entwirft eine präzise Aufgabenbeschreibung, Qwen3-Coder
+setzt sie um, Claude prüft das Ergebnis auf Bugs und Regressionen, ich
+teste jede Änderung live in der laufenden App. Alle Entwicklungsschritte
+sind nachvollziehbar in [`tasks/`](tasks/) dokumentiert — inklusive
+gefundener Bugs und Korrekturrunden. Kein Vibe-Coding auf Vertrauen: jede
+Zeile wurde geprüft, bevor sie committet wurde.
+
 ## Was MarkDock kann
 
 - **Automatischer Import** aus 11 Browsern (Chrome, Edge, Opera, Brave,
@@ -82,6 +99,23 @@ bleibt.
 
 A local, privacy-friendly bookmark manager for Windows. No cloud
 requirement, no accounts, no ads — your bookmarks stay on your machine.
+
+## How this project was built
+
+MarkDock was built entirely through the collaboration of two AI models,
+with me acting as product owner and tester:
+
+- **[Claude](https://claude.ai) (Anthropic)** — architecture, code review,
+  task planning, bug analysis
+- **Qwen3-Coder 30B** — running locally (RTX 4090), handles the actual
+  code implementation based on Claude's specifications
+
+The workflow: Claude drafts a precise task specification, Qwen3-Coder
+implements it, Claude reviews the result for bugs and regressions, I test
+every change live in the running app. The full development history is
+documented in [`tasks/`](tasks/) — including bugs found and correction
+rounds. No blind vibe-coding: every line was reviewed before being
+committed.
 
 ## What MarkDock can do
 
