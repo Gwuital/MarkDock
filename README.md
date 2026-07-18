@@ -60,6 +60,31 @@ dotnet run
 
 Voraussetzung: .NET 8 SDK installiert.
 
+## Portable Version selbst bauen
+
+Die fertige `.exe` gibt's bereits fix und fertig unter
+[Releases](../../releases) zum Download — für die meisten reicht das.
+
+Wer stattdessen selbst eine portable Einzeldatei bauen möchte (läuft ohne
+.NET-Installation auf jedem Windows-Rechner):
+
+```
+cd src\MarkDock
+dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true
+```
+
+Die fertige Datei liegt danach unter:
+
+```
+src\MarkDock\bin\Release\net8.0-windows\win-x64\publish\MarkDock.exe
+```
+
+**Wichtig:** Es entsteht dabei zusätzlich eine zweite `MarkDock.exe` eine
+Ebene höher (`win-x64\` ohne `publish`) — das ist nur ein
+Build-Zwischenergebnis mit ~150 losen DLL-Dateien daneben, keine echte
+portable Einzeldatei. Immer die Version aus dem `publish`-Unterordner
+verwenden.
+
 ## Wo liegen meine Daten?
 
 ```
@@ -154,6 +179,30 @@ dotnet run
 ```
 
 Requires the .NET 8 SDK.
+
+## Building the portable version yourself
+
+A ready-to-use `.exe` is already available for download under
+[Releases](../../releases) — that's enough for most people.
+
+If you'd rather build your own portable single-file executable (runs on
+any Windows machine without a .NET installation):
+
+```
+cd src\MarkDock
+dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true
+```
+
+The finished file ends up here:
+
+```
+src\MarkDock\bin\Release\net8.0-windows\win-x64\publish\MarkDock.exe
+```
+
+**Note:** this also produces a second `MarkDock.exe` one level up
+(`win-x64\` without `publish`) — that's just an intermediate build
+artifact with ~150 loose DLL files next to it, not a real portable
+single file. Always use the one from the `publish` subfolder.
 
 ## Where is my data stored?
 
