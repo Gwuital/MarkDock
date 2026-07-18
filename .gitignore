@@ -1,0 +1,35 @@
+# Build-Ausgaben
+[Bb]in/
+[Oo]bj/
+**/bin/
+**/obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Testergebnisse
+[Tt]est[Rr]esult*/
+
+# NuGet
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+# Veröffentlichungs-Ausgaben
+**/publish/
+
+# Betriebssystem-Dateien
+Thumbs.db
+.DS_Store
+
+# Temporäre Dateien
+*.tmp
+*.bak
+*.log
