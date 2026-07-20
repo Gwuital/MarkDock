@@ -801,7 +801,7 @@ namespace MarkDock
             {
                 ("Chrome", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Google", "Chrome", "User Data", "Default", "Bookmarks")),
                 ("Edge", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Microsoft", "Edge", "User Data", "Default", "Bookmarks")),
-                ("Opera", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Opera Software", "Opera Stable", "Bookmarks")),
+                ("Opera", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Opera Software", "Opera Stable", "Default", "Bookmarks")),
                 ("Brave", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "BraveSoftware", "Brave-Browser", "User Data", "Default", "Bookmarks")),
                 ("Vivaldi", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Vivaldi", "User Data", "Default", "Bookmarks")),
                 ("SRWare Iron", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Chromium", "User Data", "Default", "Bookmarks")),
@@ -1258,7 +1258,7 @@ namespace MarkDock
                 ("Firefox", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Mozilla", "Firefox", "Profiles")),
                 ("Zen", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "zen", "Profiles")),
                 ("Floorp", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Floorp", "Profiles")),
-                ("Waterfox", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Waterfox", "Profiles"))
+                ("Waterfox", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Waterfox", "Waterfox", "Profiles"))
             };
 
             foreach (var (name, root) in geckoRoots)

@@ -140,7 +140,7 @@
                     Click="RestoreButton_Click"/>
             <Button x:Name="DeleteAllButton"
                     Content="🗑 Alles löschen"
-                    Margin="20,0,0,0"
+                    Margin="60,0,0,0"
                     Height="30"
                     Background="#C0392B"
                     Foreground="White"
